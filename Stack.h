@@ -1,4 +1,5 @@
 #include <vector>
+#include <iostream>
 
  
 class Stack{
@@ -13,7 +14,9 @@ public:
 	bool empty();
 	bool full();
 	
-	
+	bool find(const int& elem);
+	int count(const int& elem);
+
 	inline int size(){return _stack.size();}
 
 private:

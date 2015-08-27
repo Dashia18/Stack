@@ -1,6 +1,7 @@
+#include "Stack.h"
 #include <iostream>
 #include <cstdlib>
-#include "Stack.h"
+
 
 
 	
@@ -20,6 +21,8 @@ int main()
 	{
 		std::cout<<stack_int.get_stack_elem(i)<<" ";
 	}
+
 	
+	std::cout<<"\n"<<"Is element found?"<<stack_int.find(5);
 	return 0;
 }

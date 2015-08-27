@@ -37,3 +37,25 @@ bool Stack::peek(int& elem){
 	elem = _stack.back();
 	return true;
 }
+
+bool Stack::find(const int& elem){
+	bool isFind = false;
+	
+	int len =_stack.size();
+	for (int i=0; i < _stack.size(); i++)
+	{
+		if (_stack[i]==elem)
+		{
+			isFind =true;
+		} 
+	}
+	if(isFind)
+	{
+		return isFind;
+	}
+}
+
+int count(const int& elem){
+	int num = 0;
+	return num;
+}
