@@ -55,7 +55,14 @@ bool Stack::find(const int& elem){
 	}
 }
 
-int count(const int& elem){
+int Stack::count(const int& elem){
 	int num = 0;
+	for (int i=0; i < _stack.size(); i++)
+	{
+		if (_stack[i]==elem)
+		{
+			num++;
+		} 
+	}
 	return num;
 }
