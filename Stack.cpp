@@ -42,22 +42,22 @@ bool Stack::find(const int& elem){
 	bool isFind = false;
 	
 	int len =_stack.size();
-	for (int i=0; i < _stack.size(); i++)
+	for (int i=0; i < len; i++)
 	{
 		if (_stack[i]==elem)
 		{
 			isFind =true;
 		} 
 	}
-	if(isFind)
-	{
+	
 		return isFind;
-	}
+	
 }
 
 int Stack::count(const int& elem){
 	int num = 0;
-	for (int i=0; i < _stack.size(); i++)
+	int len = _stack.size();
+	for (int i=0; i < len; i++)
 	{
 		if (_stack[i]==elem)
 		{
